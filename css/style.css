@@ -66,3 +66,59 @@ nav ul li a:active{
 	vertical-align: top;
 	width: 0.45em;
 }
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:520px;
+    width:100%;
+    top: 90px;
+    background: url(../images/banner_image.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.banner-container{
+    display: flex;
+    height: 68%;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.banner-link{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 55px;
+    letter-spacing: 5px;
+    text-underline-offset: 12px;
+}
+
+.banner-description{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 23px;
+    letter-spacing: 4px;
+}
+
+.circle{
+    width: 68px;
+    height: 68px;
+    background: #e4551d;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    color: white;
+}
+
+.circle > svg{
+    margin-top: 5px;
+}
