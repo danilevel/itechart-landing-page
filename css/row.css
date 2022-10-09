@@ -1,0 +1,104 @@
+/*
+    row block
+*/
+
+.row-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.row-inner{
+    min-height: 350px;
+    max-width: 1210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: thin solid #d5d5d5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.row-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #637f83;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+}
+
+.row-description{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #a4a3a3;
+    line-height: 1.7;
+}
+
+.div-image1{
+    height: 100px;
+    width: 100px;
+    background : url(../images/1.png);
+    background-size:130%;
+    background-position: top;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.div-image2{
+    height: 100px;
+    width: 100px;
+    background: url(../images/2.png);
+    background-size: 150%;
+    background-position: top;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.div-image3{
+    height: 100px;
+    width: 100px;
+    background: url(../images/3.png);
+    background-size: 110%;
+    background-position: top;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.div-image4{
+    height: 100px;
+    width: 100px;
+    background: url(../images/4.png);
+    background-size: 130%;
+    background-position: top;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.div-text{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100px;
+    margin-left: 15px;
+}
+
+.div-text a{
+    color: #e4551d;
+    cursor: pointer;
+}
+
+.div-text a:hover{
+    border-bottom: 1px solid #e4551d;
+    transition: 0.2s all;
+}
+
+.div-card{
+    display: flex;
+    max-width: 570px;
+    min-height: 100px;
+    flex-direction: row;
+    text-align: left;
+    padding: 10px;
+}

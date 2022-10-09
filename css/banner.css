@@ -1,0 +1,67 @@
+/*
+    Banner area 
+*/
+
+.banner-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:520px;
+    width:100%;
+    top: 90px;
+    background: url(../images/banner_image.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.banner-inner{
+    display: flex;
+    height: 68%;
+    min-width: 60%;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.banner-link{
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 55px;
+    letter-spacing: 4px;
+    text-underline-offset: 12px;
+    cursor: pointer;
+}
+
+.banner-description{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 23px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+
+.button-circle{
+    width: 68px;
+    height: 68px;
+    background: #e4551d;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    color: white;
+}
+
+.button-circle > svg{
+    margin-top: 20px;
+}
+
+.button-circle:hover{
+    transition: all 0.2s;
+    background: #b83400;
+}

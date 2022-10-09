@@ -1,0 +1,40 @@
+/*
+    Text-block area 
+*/
+
+.text-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 140px;
+    width: 100%;
+    min-width: 60%;
+    background-color: white;
+}
+
+.text-inner{
+    display: flex;
+    height: 68%;
+    min-width: 60%;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.text-title{
+    font-size: 34px;
+    font-weight: bold;
+    color: #637f83;
+    letter-spacing: 2px;
+    padding: 4px 20px;
+}
+
+.text-description{
+    font-size: 24px;
+    font-weight:lighter;
+    color: #637f83;
+    letter-spacing: 0.55px;
+    padding: 3px 20px;
+}

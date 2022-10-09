@@ -1,0 +1,72 @@
+/*
+    Featured content area
+*/
+
+.featured-wrapper{
+    min-height: 375px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+
+.featured-container{
+    display: flex;
+    min-height: 375px;
+    max-width: 1200px;
+    justify-content:center;
+    align-items: center;
+}
+
+.featured-card{
+    min-height: 375px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 60px 50px;
+    border-right: thin solid #d5d5d5;
+}
+
+.featured-card-icon{
+    font-size: 64px;
+    padding: 0px 20px 14px 20px;
+}
+
+.card-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #637f83;
+    letter-spacing: 1px;
+    padding-top: 16px;
+}
+
+.card-description{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #a4a3a3;
+    padding-top: 25px;
+}
+
+.button-card{
+    font-weight: bold;
+    width: 70px;
+    height: 32px;
+    color: white;
+    background-color: #637f83;
+    font-size: 16px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+}
+
+.button-card:hover{
+    box-shadow: 4px 4px 2px rgba(99,127,131, 0.5);
+    transition: all 0.2s;
+}
+
+.featured-card:last-child{
+    border-right: 0
+}
