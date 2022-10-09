@@ -242,6 +242,83 @@ nav ul li a:active{
     font-size: 16px;
 }
 
-.featured-card :last-child{
+.featured-card:last-child{
     border-right: 0
+}
+
+/*
+    Portfolio area
+*/
+
+.portfolio-wrapper{
+    height:510px;
+    width:100%;
+    background-color: white;
+}
+
+.portfolio-inner{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.button-circle-little{
+    width: 20px;
+    height: 20px;
+    background: #e4551d;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    color: white;
+    padding-top: 1px;
+}
+
+.div-buttons{
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.image-orange{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+    background: url(../images/orange.jpg);
+    background-size: cover;
+    margin: 10px;
+    background-position: center;
+}
+
+.image-block{
+    width: 300px;
+    height: 100%;
+    border-top: 15px solid white;
+    border-bottom: 15px solid white;
+}
+
+.button-portfolio{
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: #e4551d;
+    font-size: 18px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+    margin-bottom: 60px;
+}
+
+.div-paddings{
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 20px;
 }
