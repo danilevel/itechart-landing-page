@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 60vw;
+    width: 1170px;
 }
 
 .logo{
@@ -89,6 +89,7 @@ nav ul li a:active{
 .banner-inner{
     display: flex;
     height: 68%;
+    min-width: 60%;
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
@@ -148,12 +149,14 @@ nav ul li a:active{
     text-align: center;
     height: 140px;
     width: 100%;
+    min-width: 60%;
     background-color: white;
 }
 
 .text-inner{
     display: flex;
     height: 68%;
+    min-width: 60%;
     flex-direction: column;
     justify-content:center;
     align-items: center;
@@ -189,7 +192,9 @@ nav ul li a:active{
 .featured-container{
     display: flex;
     height: 100%;
+    min-width: 60%;
     justify-content:center;
+    align-items: center;
 }
 
 .featured-card{
@@ -239,7 +244,6 @@ nav ul li a:active{
 .button-card:hover{
     box-shadow: 4px 4px 2px rgba(99,127,131, 0.5);
     transition: all 0.2s;
-    font-size: 16px;
 }
 
 .featured-card:last-child{
@@ -254,11 +258,16 @@ nav ul li a:active{
     height:510px;
     width:100%;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
-.portfolio-inner{
+.div-action{
     display: flex;
-    height: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -266,23 +275,43 @@ nav ul li a:active{
 }
 
 .button-circle-little{
-    width: 20px;
+    width: 40px;
     height: 20px;
     background: #e4551d;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     color: white;
-    padding-top: 1px;
+    margin: 1px 5px 1px 5px;
+}
+
+.button-circle-little:hover{
+    transition: all 0.2s;
+    background: #b83400;
 }
 
 .div-buttons{
-    width: 70px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 10px 10px;
 }
+
+.div-buttons:before{
+    width:100%;
+    height:1px;
+    background: rgb(217, 217, 217);
+    content:"";
+    margin-right: 22px;
+ }
+
+ .div-buttons:after{
+    width:100%;
+    height:1px;
+    background: rgb(217, 217, 217);
+    content:"";
+    margin-left: 22px;
+ }
 
 .image-orange{
     height: 200px;
@@ -317,8 +346,107 @@ nav ul li a:active{
     margin-bottom: 60px;
 }
 
+.button-portfolio:hover{
+    box-shadow: 4px 4px 2px rgba(228, 85, 29, 0.5);
+    transition: all 0.2s;
+}
+
 .div-paddings{
     width: 100%;
     padding-top: 64px;
     padding-bottom: 20px;
+}
+
+/*
+    row block
+*/
+
+.row-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.row-inner{
+    height: 350px;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-top: thin solid #d5d5d5;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.row-title{
+    font-size: 22px;
+    font-weight: bold;
+    color: #637f83;
+    letter-spacing: 1px;
+    padding-bottom: 12px;
+}
+
+.row-description{
+    font-size: 14px;
+    font-weight: lighter;
+    color: #a4a3a3;
+    line-height: 1.7;
+}
+
+.div-image1{
+    height: 100px;
+    width: 100px;
+
+   background : url(../images/1.png);
+
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.div-image2{
+    height: 100px;
+    width: 100px;
+    background: url(../images/2.png);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.div-image3{
+    height: 100px;
+    width: 100px;
+    background: url(../images/3.png);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.div-image4{
+    height: 100px;
+    width: 100px;
+    background: url(../images/4.png);
+    background-size: cover;
+    background-position: top;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.div-text{
+    width: 420px;
+    height: 100px;
+    margin-left: 15px;
+}
+
+.div-card{
+    display: flex;
+    width: 570px;
+    height: 100px;
+    flex-direction: row;
+    text-align: left;
 }
