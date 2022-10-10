@@ -9,6 +9,7 @@
     height:520px;
     width:100%;
     top: 90px;
+    padding: 30px;
     background: url(../images/banner_image.jpg);
     background-size: cover;
     background-position: top;
@@ -24,6 +25,7 @@
 }
 
 .banner-link{
+    max-width:549px;
     font-family: 'PT Sans', sans-serif;
     color: white;
     font-size: 40px;
@@ -34,9 +36,11 @@
     letter-spacing: 4px;
     text-underline-offset: 12px;
     cursor: pointer;
+    padding: 15px;
 }
 
 .banner-description{
+    max-width:400px;
     font-family: 'Lato', sans-serif;
     color: white;
     font-size: 16px;
@@ -45,6 +49,7 @@
     line-height: 23px;
     letter-spacing: 4px;
     cursor: pointer;
+    padding: 15px;
 }
 
 .button-circle{
@@ -55,6 +60,7 @@
     -webkit-border-radius: 50%;
     border-radius: 50%;
     color: white;
+    padding: 15px;
 }
 
 .button-circle > svg{
@@ -64,4 +70,14 @@
 .button-circle:hover{
     transition: all 0.2s;
     background: #b83400;
+}
+
+@media (max-width: 615px){
+    .banner-link{
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .banner-description{
+        font-size: 14px;
+    }
 }

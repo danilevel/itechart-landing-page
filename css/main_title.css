@@ -38,3 +38,12 @@
     letter-spacing: 0.55px;
     padding: 3px 20px;
 }
+
+@media (max-width: 615px){
+    .text-title{
+        font-size: 24px;
+    }
+    .text-description{
+        font-size: 14px;
+    }
+}
