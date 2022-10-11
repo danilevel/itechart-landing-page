@@ -1,0 +1,23 @@
+{
+  "name": "itechart-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danilevel/itechart-landing-page.git"
+  },
+  "author": "Chernyshov Danil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danilevel/itechart-landing-page/issues"
+  },
+  "homepage": "https://github.com/danilevel/itechart-landing-page#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
