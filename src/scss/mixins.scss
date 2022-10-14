@@ -5,18 +5,3 @@
     flex-direction: $direction;
 }
 
-@mixin title(){
-    font-size: 34px;
-    font-weight: bold;
-    color: #637f83;
-    letter-spacing: 2px;
-    padding: 4px 20px;
-}
-
-@mixin description(){
-    font-size: 24px;
-    font-weight: lighter;
-    color: #637f83;
-    letter-spacing: 0.55px;
-    padding: 3px 20px;
-}

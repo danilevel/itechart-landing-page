@@ -32,7 +32,7 @@
         margin-right: 30px;
 
         &:nth-child(2n) {
-            margin-right: 0px;  
+            margin-right: 0px;
         }
     }
 
@@ -42,10 +42,13 @@
         min-height: 100px;
         margin-left: 15px;
 
-        &a {
+        & a {
+            color: #e4551d;
+
             &:hover {
                 border-bottom: 1px solid #e4551d;
                 transition: 0.2s all;
+                cursor: pointer;
             }
         }
     }

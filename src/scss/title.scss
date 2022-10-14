@@ -13,31 +13,31 @@
         height: 68%;
         min-width: 60%;
         padding: 20px 20px;
-
-        
-        .title {
-            font-size: 34px;
-            font-weight: bold;
-            color: #637f83;
-            letter-spacing: 2px;
-            padding: 4px 20px;
-        }
-
-        .description {
-            font-size: 24px;
-            font-weight: lighter;
-            color: #637f83;
-            letter-spacing: 0.55px;
-            padding: 3px 20px;
-        }
     }
 
-    @media screen and (max-width: 615px){
-        .title{
-            font-size: 24px;
+    &__title {
+        font-size: 2.125em;
+        font-weight: bold;
+        color: #637f83;
+        letter-spacing: 2px;
+        padding: 4px 20px;
+    }
+
+    &__description {
+        font-size: 1.5em;
+        font-weight: lighter;
+        color: #637f83;
+        letter-spacing: 0.55px;
+        padding: 3px 20px;
+    }
+
+    @media screen and (max-width: 615px) {
+        &__title {
+            font-size: 1.5em;
         }
-        .description{
-            font-size: 14px;
+
+        &__description {
+            font-size: 0.8em;
         }
     }
 }

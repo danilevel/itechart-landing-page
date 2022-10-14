@@ -1,4 +1,5 @@
 * {
+
     &,
     &::after,
     &::before {
@@ -12,6 +13,7 @@
 }
 
 a {
+
     &,
     &:visited,
     &:hover,
@@ -64,7 +66,7 @@ body {
 }
 
 i {
-    color: #215ee9;
+    color: #ffffff;
 }
 
 input,
@@ -78,7 +80,8 @@ input {
         display: none;
     }
 
-    &:focus:hover {
+    &:focus,
+    &:hover {
         border: none;
         outline: none;
     }

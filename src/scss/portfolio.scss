@@ -13,17 +13,30 @@
         text-align: center;
     }
 
-    &__title {
+    &__text {
         width: 100%;
         padding-top: 64px;
         padding-bottom: 20px;
     }
 
-    @include title();
-    @include description();
+    &__title {
+        font-size: 2.125em;
+        font-weight: bold;
+        color: #637f83;
+        letter-spacing: 2px;
+        padding: 4px 20px;
+    }
+
+    &__description {
+        font-size: 1.5em;
+        font-weight: lighter;
+        color: #637f83;
+        letter-spacing: 0.55px;
+        padding: 3px 20px;
+    }
 
     &__action {
-        @include display(flex, space-between, column,center);
+        @include display(flex, space-between, column, center);
         width: 100%;
         text-align: center;
     }
@@ -33,19 +46,21 @@
         width: 100%;
 
         &:before {
-            width: 100%;
+            max-width: 532px;
+            flex: 1;
             height: 1px;
             background: rgb(217, 217, 217);
             content: "";
-            margin-right: 22px;
+            margin-right: 20px;
         }
 
         &:after {
-            width: 100%;
+            max-width: 532px;
+            flex: 1;
             height: 1px;
             background: rgb(217, 217, 217);
             content: "";
-            margin-left: 22px;
+            margin-left: 20px;
         }
     }
 
@@ -61,14 +76,19 @@
     }
 
     .button-circle-little {
-        width: 40px;
+        width: 20px;
         height: 20px;
         background: #e4551d;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
-        color: #ffff;
-        margin: 1px 5px 1px 5px;
+        color: #ffffff;
+        margin: 1px 7px 1px 7px;
+
+        &:hover {
+            transition: all 0.2s;
+            background: #b83400;
+        }
     }
 
     .window-wrapper {
@@ -110,6 +130,16 @@
         &:hover {
             box-shadow: 4px 4px 2px rgba(228, 85, 29, 0.5);
             transition: all 0.2s;
+        }
+    }
+
+    @media screen and (max-width: 615px) {
+        &__title {
+            font-size: 1.5em;
+        }
+
+        &__description {
+            font-size: 0.8em;
         }
     }
 }
