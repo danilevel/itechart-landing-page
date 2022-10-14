@@ -8,17 +8,21 @@ export const path = {
     build: {
         css: './dist/css/',
         files: './dist/files/',
-        html: './dist/'
+        html: './dist/',
+        images: './dist/images',
     },
     src: {
         scss: './src/scss/*.scss',
         html: './src/*.html',
-        files: './src/files/**/*.*'
+        files: './src/files/**/*.*',
+        images: './images/**/*.{jpg,jpeg,png,gif,webp}',
+        svg: './images/**/*.svg',
     },
     watch: {
         scss: './src/scss/**/*.scss',
         html: './src/html/**/*.html',
-        files: './src/files/**/*.*'
+        files: './src/files/**/*.*',
+        images: './images/**/*.{jpg,jpeg,png,svg,gif,webp,ico,webp}'
     },
     clean: buildFolder,
     buildFolder: buildFolder,

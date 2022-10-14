@@ -1,7 +1,9 @@
+import browsersync from "browser-sync";
+
 export const server = () => {
-    app.plugins.browsersync.init({
+    browsersync.create().init({
         server: {
-            baseDir: '${app.path.build.html}'
+            baseDir: './dist'
         },
         notify: false,
         port: 3000

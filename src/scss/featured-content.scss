@@ -1,0 +1,92 @@
+@import "../scss/mixins.scss";
+
+.featured-content {
+    @include display(flex, center, none, none);
+    min-height: 375px;
+    width: 100%;
+    background-color: #f6f6f6;
+
+    &__container {
+        @include display(flex, center, none, center);
+        min-height: 375px;
+        max-width: 1200px;
+    }
+
+    &__featured-card {
+        @include display(flex, space-between, column, center);
+        min-height: 375px;
+        max-width: 300px;
+        text-align: center;
+        padding: 60px 50px;
+        border-right: thin solid #d5d5d5;
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #637f83;
+        letter-spacing: 1px;
+        padding-top: 16px;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: lighter;
+        color: #a4a3a3;
+        padding-top: 25px;
+    }
+
+    .button-card {
+        font-weight: bold;
+        width: 70px;
+        height: 32px;
+        color: #fff;
+        background-color: #637f83;
+        font-size: 16px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        padding-bottom: 2px;
+
+        &:hover {
+            box-shadow: 4px 4px 2px rgba(99, 127, 131, 0.5);
+            transition: all 0.2s;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        &__container {
+            max-width: 600px;
+            flex-wrap: wrap;
+        }
+
+        &__featured-card {
+            &:first-child {
+                border-bottom: thin solid #d5d5d5;
+            }
+
+            &:nth-child(2n) {
+                border: none;
+                border-bottom: thin solid #d5d5d5;
+            }
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 615px) {
+        &__featured-card {
+            border-bottom: thin solid #d5d5d5;
+            border-right: none;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
