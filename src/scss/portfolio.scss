@@ -1,19 +1,15 @@
 @import "../scss/mixins.scss";
 
 .portfolio {
+    @include display(flex, center, none, none);
     background-color: white;
     width: 100%;
-    display: flex;
-    justify-content: center;
 
     &__container {
+        @include display(flex, space-between, column, center);
         max-width: 1200px;
         min-height: 510px;
-        display: flex;
         flex: 1;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         text-align: center;
     }
 
@@ -27,19 +23,14 @@
     @include description();
 
     &__action {
-        display: flex;
+        @include display(flex, space-between, column,center);
         width: 100%;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
         text-align: center;
     }
 
     &__buttons {
+        @include display(flex, center, none, center);
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         &:before {
             width: 100%;
@@ -59,12 +50,10 @@
     }
 
     &__image {
+        @include display(flex, center, none, center);
         height: 190px;
-        display: flex;
         width: 100%;
-        justify-content: center;
         overflow: hidden;
-        align-items: center;
         background: url(../images/orange.jpg);
         background-size: cover;
         margin: 10px;
