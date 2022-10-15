@@ -1,7 +1,7 @@
 @import "../scss/mixins.scss";
 
 @mixin title {
-    color: #ffff;
+    color: #ffffff;
     letter-spacing: 4px;
     padding: 15px;
     text-align: center;
@@ -47,12 +47,12 @@
 
     @media screen and (max-width: 615px) {
         &__link {
-            font-size: 24px;
+            font-size: 1.5em;
             line-height: 40px;
         }
 
         &__description {
-            font-size: 14px;
+            font-size: 0.875em;
         }
     }
 }
@@ -64,7 +64,7 @@
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    color: #ffff;
+    color: #ffffff;
     padding: 15px;
 
     & > svg {
