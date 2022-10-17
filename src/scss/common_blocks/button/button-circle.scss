@@ -1,0 +1,9 @@
+@import "../scss/common_blocks/variables/variables.scss";
+
+.button-circle{
+    background: $active-color;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    color: $default-color;
+}

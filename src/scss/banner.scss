@@ -1,7 +1,8 @@
-@import "../scss/mixins.scss";
+@import "../scss/common_blocks/mixins/mixins.scss";
+@import "../scss/common_blocks/button/button-circle.scss";
 
 @mixin title {
-    color: #ffffff;
+    color: $default-color;
     letter-spacing: 4px;
     padding: 15px;
     text-align: center;
@@ -45,6 +46,21 @@
         text-transform: uppercase;
     }
 
+    &__button-circle_size {
+        width: 68px;
+        height: 68px;
+        padding: 15px;
+    
+        & > svg {
+            margin-top: 20px;
+        }
+    
+        &:hover {
+            transition: all 0.2s;
+            background: $hover-color;
+        }
+    }
+
     @media screen and (max-width: 615px) {
         &__link {
             font-size: 1.5em;
@@ -54,25 +70,5 @@
         &__description {
             font-size: 0.875em;
         }
-    }
-}
-
-.button-circle {
-    width: 68px;
-    height: 68px;
-    background: #e4551d;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    color: #ffffff;
-    padding: 15px;
-
-    & > svg {
-        margin-top: 20px;
-    }
-
-    &:hover {
-        transition: all 0.2s;
-        background: #b83400;
     }
 }

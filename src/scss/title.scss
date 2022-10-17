@@ -1,4 +1,5 @@
-@import "../scss/mixins.scss";
+@import "../scss/common_blocks/mixins/mixins.scss";
+@import "../scss/common_blocks/variables/variables.scss";
 
 .main-title {
     @include display(flex, center, none, center);
@@ -6,7 +7,7 @@
     min-width: 60%;
     width: 100%;
     text-align: center;
-    background-color: #ffffff;
+    background-color: $default-color;
 
     &__container {
         @include display(flex, center, column, center);
@@ -18,7 +19,7 @@
     &__title {
         font-size: 2.125em;
         font-weight: bold;
-        color: #637f83;
+        color: $main-color;
         letter-spacing: 2px;
         padding: 4px 20px;
     }
@@ -26,7 +27,7 @@
     &__description {
         font-size: 1.5em;
         font-weight: lighter;
-        color: #637f83;
+        color: $main-color;
         letter-spacing: 0.55px;
         padding: 3px 20px;
     }

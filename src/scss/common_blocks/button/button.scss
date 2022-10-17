@@ -1,0 +1,8 @@
+@import "../scss/common_blocks/variables/variables.scss";
+
+.button{
+    font-weight: bold;
+    font-size: 1.125em;
+    color: $default-color;
+    letter-spacing: 1px;
+}
